@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 
-import br.com.jovens.profissionais.enums.UserTypes;
+import com.indra.projectrh.enums.UserTypes;
 
 @Entity
 public class User extends People {
