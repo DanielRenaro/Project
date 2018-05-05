@@ -69,11 +69,11 @@ text-align: center;
 			<div id='campoSenha'><input type="password" placeholder="password"/></div>
 <br>
 		<div id='botao'>
-		<a href="/Project/pages/home.jsp"> <!-- Arrumar o caminho do link que ele vai ir apÃ³s logar -->
+		  <a href="home/Menu"> <!-- Arrumar o caminho do link que ele vai ir apÃ³s logar -->
 			<button type="button" class="btn btn-primary">Logar</button>
 			
 		</a>	
-		<a href="/ProjetoIndra/faces/page/ForgotPass.xhtml"> 
+		<a href="home/pages/ForgotPass"> 
 		
 				<button type="button" class="btn btn-primary">Esqueci a senha</button>
 			</a>

@@ -1,12 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<link rel="stylesheet"
-		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -39,33 +40,27 @@
 }
 </style>
 </head>
-<body> 
-		
+<body>
+
+	<jsp:useBean id="dao" class="br.com.indra.projectrh.dao.ManagerDAO" />
 
 	<div id="content" align="center">
 		<h1>Sistema de Gestão de Jovens Profissionais</h1>
-		<h1> Gestores </h1>
-			
-		<div style="height: 530px;">
-		<div id="top" class="row">
-			<div class="col-md-6">
-				<div class="input-group h2">
-				
-		 		<input name="data[search]" class="form-control" id="search"
-						type="text" placeholder="Pesquisar Gestores" /> <span
-						class="input-group-btn">
-						<button class="btn btn-primary" type="submit"  >
-							<span class="glyphicon glyphicon-search"></span>
-						</button>
-					</span>	
-				</div>
-			</div>
-		</div>
+		<h1>Gestores</h1>
+
+		<table>
+			<!-- percorre contatos montando as linhas da tabela -->
+			<c:forEach var="manager" items="${dao.managers}">
+				<tr>
+					<td>${manager.idManager}</td>
+					<td>${manager.name}</td>
+					<td>${manager.type}</td>
+				</tr>
+			</c:forEach>
+		</table>
+
+
 	</div>
 
-		
-		
-	</div>
-	
-	</body>
+</body>
 </html>
