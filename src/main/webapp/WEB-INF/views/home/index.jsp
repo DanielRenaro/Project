@@ -1,9 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
 <style>
 .paypal-button button.large {
 	min-width: 150px;
@@ -45,23 +46,20 @@
 </style><title>Projeto JP</title>
 </head>
 <body> 
-		<h1>Sistema de GestÃ£o de Jovens Profissionais</h1>
+		<h1>Sistema de Gestão de Jovens Profissionais</h1>
 
-	<div id="meio">
-		<div class="form-group">
+	<div id="content">
+		<div class="formulario-login">
 
 		<label id="email">Email</label>
 			<input type="text" placeholder="email"/>
-		</div>
 
-
-		<div class="form-group">
 
 			<label id="senha">Senha</label>
 			<input type="password" placeholder="password"/>
 
-		</div>
-		<a href="/ProjetoIndra/faces/page/index.xhtml"> <!-- Arrumar o caminho do link que ele vai ir apÃ³s logar -->
+		
+		<a href="/Project/pages/home.jsp"> <!-- Arrumar o caminho do link que ele vai ir após logar -->
 			<button type="button" class="btn btn-primary">Logar</button>
 			
 		</a>	
@@ -71,6 +69,8 @@
 			</a>
 		
 		
-	
-	</div>	</body>
+	<div> <a href="home.jsp"> Home </a></div>
+	</div>
+	</div>	
+	</body>
 </html>
