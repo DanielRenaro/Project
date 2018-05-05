@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -39,26 +39,14 @@
 }
 </style>
 </head>
-<body>
+<body> 
+		
 
-	<form>
-	<!-- 	<p:growl id="messages" showDetail="true" />
-
-		<p:contextMenu>
-			<p:menuitem value="Save" actionListener="#{menuView.save}"
-				update="messages" icon="ui-icon-disk" />
-			<p:menuitem value="Update" actionListener="#{menuView.update}"
-				update="messages" icon="ui-icon-arrowrefresh-1-w" />
-			<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-				ajax="false" icon="ui-icon-close" />
-			<p:menuitem value="Homepage" url="http://www.primefaces.org"
-				icon="ui-icon-extlink" />
-		</p:contextMenu>
-		 -->
-	</form>
-
-
-	<div style="height: 530px;">
+	<div id="content" align="center">
+		<h1>Sistema de GestÃ£o de Jovens Profissionais</h1>
+		<h1> Gestores </h1>
+			
+		<div style="height: 530px;">
 		<div id="top" class="row">
 			<div class="col-md-6">
 				<div class="input-group h2">
@@ -75,40 +63,9 @@
 		</div>
 	</div>
 
-
-		<div id="list" class="row">
-
-			<div class="table-responsive col-md-12">
-				<p:dataTable var="manager" class="table table-striped" cellspacing="0" cellpadding="0">
-					<thead>
-						<tr>
-							<p:column headerText="Matricula">
-								<h:outputText value="" />
-							</p:column>
-							<p:column headerText="Nome">
-								<h:outputText value="" />
-							</p:column>
-							<p:column headerText="Localidade">
-								<h:outputText value="" />
-							</p:column>
-							<th class="actions">Ações</th>
-						</tr>
-					</thead>
-					<tbody>
-
-					<p:column headerText="Status" class="actions">
-								<h:outputText value="" />
-							
-								<p:button type="button" class="btn btn-primary btn-xs">Visualizar</p:button>
-								<p:button type="button" class="btn btn-primary btn-xs">Editar</p:button>
-								<p:button type="button" class="btn btn-primary btn-xs">Excluir</p:button>
-					</p:column>
-					</tbody>
-				</p:dataTable>
-
-			</div>
-		</div>
+		
+		
+	</div>
 	
-
-</body>
+	</body>
 </html>
