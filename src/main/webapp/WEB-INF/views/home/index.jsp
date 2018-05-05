@@ -3,56 +3,72 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<link rel="stylesheet"
-		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+
 <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js">
+</script>
 
 
+<style>
+#titulo{
+text-align: center;
+margin: 70px 350px;
+}
+#campoEmail{
+text-align: center;
+margin: -10px 350px;
+}
+#txtcampoEmail{
+text-align: center;
+margin:10px 350px;
 
-<style type="text/css">
-#list {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-left: -500px;
-	margin-top: -50px;
-	width: 950px;
+}
+#campoSenha{
+text-align: center;
+margin: -10px 350px;
+}
+#txtcampoSenha{
+text-align: center;
+margin:10px 350px;
+
+}
+#botao{
+text-align: center;
+
 }
 
-#top {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-left: -250px;
-	margin-top: -150px;
-	width: 950px;
+#content{
+	margin: 10px 50px;
+	width: 100px !important;
+	height: 25px !important;
+	border-radius: 5px !important;
+	display: block;
+	text-align: center;
 }
-</style>
+
+</style><title>Projeto JP</title>
 </head>
 <body> 
-	<div id="content" align="center">
-		<h1>Sistema de Gestão de Jovens Profissionais</h1>
-		
+
+ <div id="titulo">
+		<h1>Sistema de Gestão 
+		         de 
+		Jovens Profissionais</h1>
+</div>
+	<div>
 		<div class="formulario-login">
-
+<div id='txtcampoEmail'>
 		<label id="email">Email</label>
-			<input type="text" placeholder="email"/>
-
-
-			<label id="senha">Senha</label>
-			<input type="password" placeholder="password"/>
-
-		
+</div>
+<div id='campoEmail'>
+        <input type="text" placeholder="email"/>
+</div>
+			<div id='txtcampoSenha'><label id="senha">Senha</label></div>
+			<div id='campoSenha'><input type="password" placeholder="password"/></div>
+<br>
+		<div id='botao'>
 		<a href="/Project/pages/home.jsp"> <!-- Arrumar o caminho do link que ele vai ir apÃ³s logar -->
 			<button type="button" class="btn btn-primary">Logar</button>
 			
@@ -61,9 +77,7 @@
 		
 				<button type="button" class="btn btn-primary">Esqueci a senha</button>
 			</a>
-		
-		
-	<div> <a href="home.jsp"> Home </a></div>
+		</div>
 	</div>
 	</div>	
 	</body>
