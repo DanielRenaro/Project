@@ -22,6 +22,10 @@ public class HomeController
     return "Menu";  
    }
   
+   @RequestMapping("ForgotPass")
+   public String forgotPass() {
+    return "ForgotPass";  
+   }
   
    
 }
