@@ -31,7 +31,7 @@
             </div>
 
             <div class="right-div">
-                <a href="#" class="btn btn-danger pull-right">LOG ME OUT</a>
+                <a href="index" class="btn btn-danger pull-right">LOG ME OUT</a>
             </div>
         </div>
     </div>
@@ -43,10 +43,10 @@
                     <div class="navbar-collapse collapse ">
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
                             <li><a href="home" class="menu-top-active">HOME</a></li>                           
-                            <li><a href="form.html">Avaliação</a></li>
-                            <li><a href="form.html">Administradores</a></li>
-                            <li><a href="#">Jovens Profissionais</a></li>                         
-                            <li><a href="tab.html">Gestores</a></li>        
+                            <li><a href="evaluation">Avaliação</a></li>
+                            <li><a href="ListadeUsuarios">Administradores</a></li>
+                            <li><a href="ListaDeJP">Jovens Profissionais</a></li>                         
+                            <li><a href="listaGestores">Gestores</a></li>        
 
                         </ul>
                     </div>

@@ -26,6 +26,10 @@ public class HomeController {
 	public String reajuste() {
 		return "reajuste";
 	}
+	@RequestMapping("logOut")
+	public String logOut() {
+		return "logOut";
+	}
 
 	@RequestMapping("listaGestores")
 	public String listaGestores() {
@@ -44,6 +48,13 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String index() {
+		return "index";
+		// return "home/login";
+		// return "Menu";
+		// return "home/listaGestores";
+	}
+	@RequestMapping("index")
+	public String indexA() {
 		return "index";
 		// return "home/login";
 		// return "Menu";
