@@ -1,4 +1,4 @@
-package br.com.indra.projectrh.model;
+package com.indra.projectrh.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

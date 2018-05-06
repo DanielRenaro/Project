@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.indra.projectrh.dao;
+package com.indra.projectrh.dao;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-import br.com.indra.projectrh.model.Manager;
+import com.indra.projectrh.model.Manager;
 
 /**
  * @author befernandes

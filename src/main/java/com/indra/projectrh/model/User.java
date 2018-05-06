@@ -1,10 +1,10 @@
-package br.com.indra.projectrh.model;
+package com.indra.projectrh.model;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 
-import br.com.indra.projectrh.enums.UserTypes;
+import com.indra.projectrh.enums.UserTypes;
 
 @Entity
 public class User extends People {

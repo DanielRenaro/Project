@@ -1,12 +1,12 @@
 /**
  * 
  */
-package br.com.indra.projectrh.model;
+package com.indra.projectrh.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
-import br.com.indra.projectrh.enums.UserTypes;
+import com.indra.projectrh.enums.UserTypes;
 
 /**
  * @author drenaro

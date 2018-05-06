@@ -1,4 +1,4 @@
-package br.com.indra.projectrh.conf;
+package com.indra.projectrh.conf;
 
 import javax.sql.DataSource;
 

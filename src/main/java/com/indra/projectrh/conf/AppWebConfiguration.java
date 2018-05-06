@@ -1,11 +1,11 @@
-package br.com.indra.projectrh.conf;
+package com.indra.projectrh.conf;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-import br.com.indra.projectrh.controller.HomeController;
-import br.com.indra.projectrh.dao.UserDAO;
+import com.indra.projectrh.controller.HomeController;
+import com.indra.projectrh.dao.UserDAO;
 
 
 

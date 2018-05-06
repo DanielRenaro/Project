@@ -1,4 +1,4 @@
-package br.com.indra.projectrh.dao;
+package com.indra.projectrh.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
@@ -8,7 +8,7 @@ import javax.persistence.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.indra.projectrh.model.User;
+import com.indra.projectrh.model.User;
 
 
 

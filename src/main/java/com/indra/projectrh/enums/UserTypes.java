@@ -1,4 +1,4 @@
-package br.com.indra.projectrh.enums;
+package com.indra.projectrh.enums;
 
 public enum UserTypes {
 

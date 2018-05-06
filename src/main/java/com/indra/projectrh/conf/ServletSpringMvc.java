@@ -1,4 +1,4 @@
-package br.com.indra.projectrh.conf;
+package com.indra.projectrh.conf;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
