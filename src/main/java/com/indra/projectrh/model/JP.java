@@ -20,21 +20,21 @@ public class JP extends People{
 	
 
 	
-//	public JP(String name, String personalDocuments, String registration, String email, String city, String genre,
-//			Integer age, Double currentSalary, String course) {
-//		super(name, personalDocuments, registration, email, city, genre);
-//		this.age = age;
-//		this.currentSalary = currentSalary;
-//		this.course = course;
-//	}
+	public JP(String name, String personalDocuments, String registration, String email, String city, String genre,
+			Integer age, Double currentSalary, String course) {
+		super(name, personalDocuments, registration, email, city, genre);
+		this.age = age;
+		this.currentSalary = currentSalary;
+		this.course = course;
+	}
 
 	public JP() {
 		super();
 	}
 
-//	public Integer getAge() {
-//		return this.age;
-//	}
+	public Integer getAge() {
+		return this.age;
+	}
 
 	public void setAge(Integer age) {
 		this.age = age;

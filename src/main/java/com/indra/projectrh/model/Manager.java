@@ -5,6 +5,9 @@ package com.indra.projectrh.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import com.indra.projectrh.enums.UserTypes;
 
@@ -15,11 +18,10 @@ import com.indra.projectrh.enums.UserTypes;
 @Entity
 public class Manager {
 
-	@Column(name = "Id_Manager")
+	@Id
+	
 	private Integer idManager;
-	@Column(name = "Type_User")
 	private UserTypes type;
-	@Column(name = "Name")
 	private String name;
 
 	public Manager() {

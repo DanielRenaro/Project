@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-import com.indra.projectrh.controller.HomeController;
+import com.indra.projectrh.controllers.HomeController;
 import com.indra.projectrh.dao.UserDAO;
 
 

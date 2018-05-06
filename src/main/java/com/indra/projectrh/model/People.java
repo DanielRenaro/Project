@@ -1,5 +1,8 @@
 package com.indra.projectrh.model;
 
+import java.io.Serializable;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,87 +12,95 @@ import javax.persistence.InheritanceType;
 
 @Entity
 @Inheritance(strategy=InheritanceType.JOINED)
-public class People{
+public class People implements Serializable {
 
-	
+	   
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
-	private String name;
-	private String personalDocuments;
-	private String registration;
-	private String email;
-	private String city;
-	private String genre;
-	private String age;
+	@Column(name="ID_PEOPLE")
+	private long id;
 	
-	public People(Long id, String name, String personalDocuments, String registration, String email, String city,
-			String genre, String age) {
+	@Column(name="NAME_PEOPLE")
+	private String name;
+	
+	@Column(name="PERSONAL_DOCUMENTS")
+	private String personalDocuments;
+	
+	@Column(name="REGISTRATION_PEOPLE")
+	private String registration;
+	
+	@Column(name="EMAIL_PEOPLE")
+	private String email;
+	
+	@Column(name="CITY_PEOPLE")
+	private String city;
+	
+	@Column(name="GENRE_PEOPLE")
+	private String genre;
+	
+	private static final long serialVersionUID = 1L;
+
+	
+	public People(String name, String personalDocuments, String registration, String email, String city, String genre) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.personalDocuments = personalDocuments;
 		this.registration = registration;
 		this.email = email;
 		this.city = city;
 		this.genre = genre;
-		this.age = age;
 	}
-	
 	public People() {
-
+		super();
+	}   
+	public long getId() {
+		return this.id;
 	}
 
-	
-	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
-	}
+	}   
 	public String getName() {
-		return name;
+		return this.name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
-	}
+	}   
 	public String getPersonalDocuments() {
-		return personalDocuments;
+		return this.personalDocuments;
 	}
+
 	public void setPersonalDocuments(String personalDocuments) {
 		this.personalDocuments = personalDocuments;
-	}
+	}   
 	public String getRegistration() {
-		return registration;
+		return this.registration;
 	}
+
 	public void setRegistration(String registration) {
 		this.registration = registration;
-	}
+	}   
 	public String getEmail() {
-		return email;
+		return this.email;
 	}
+
 	public void setEmail(String email) {
 		this.email = email;
-	}
+	}   
 	public String getCity() {
-		return city;
+		return this.city;
 	}
+
 	public void setCity(String city) {
 		this.city = city;
-	}
+	}   
 	public String getGenre() {
-		return genre;
+		return this.genre;
 	}
+
 	public void setGenre(String genre) {
 		this.genre = genre;
 	}
-	public String getAge() {
-		return age;
-	}
-	public void setAge(String age) {
-		this.age = age;
-	}
-	
-	
+   
 }

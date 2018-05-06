@@ -39,9 +39,9 @@ public class User extends People {
 		this.enumUserTypes = enumUserTypes;
 	}
 
-	public User(Long id, String name, String personalDocuments, String registration, String email, String city,
-			String genre, String age, String login, String password, UserTypes enumUserTypes) {
-		super(id, name, personalDocuments, registration, email, city, genre, age);
+	public User(String name, String personalDocuments, String registration, String email, String city,
+			String genre, String login, String password, UserTypes enumUserTypes) {
+		super(name, personalDocuments, registration, email, city, genre);
 		this.login = login;
 		this.password = password;
 		this.enumUserTypes = enumUserTypes;
