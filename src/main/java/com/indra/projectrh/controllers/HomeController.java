@@ -12,6 +12,8 @@ public class HomeController
    {
     return "home/index";
 //	   return "home/login";
+//	    return "home/Menu";
+//	    return "home/listaGestores";
    }
   
   
