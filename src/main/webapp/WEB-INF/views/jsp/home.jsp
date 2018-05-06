@@ -1,46 +1,51 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Menu</title>
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<script
-	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js">
-	
-</script>
+<jsp:include page="Header.jsp"></jsp:include>
+     <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+         <div class="container">
+        <div class="row pad-botm">
+            <div class="col-md-12">
+                <h4 class="header-line">Bem vindo ADM</h4>
+                
+                            </div>
 
-<style>
-#img {
-	text-align: center;
-	margin: 200px 350px;
-}
-</style>
+        </div>
+             
+             <div class="row">
+            
+                 <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-info back-widget-set text-center">
+                            <i class="fas fa-dollar-sign fa-5x"></i>
+                            <h3>30</h3>
+                           Reajustes Proximos
+                        </div>
+                    </div>
+              <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-success back-widget-set text-center">
+                           <i class="fas fa-check-circle fa-5x"></i>
+                            <h3>100</h3>
+                           Avaliações Realizadas
+                        </div>
+                    </div>
+               <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-warning back-widget-set text-center">
+                            <i class="fas fa-spinner fa-5x"></i>
+                            <h3>56</h3>
+                           Avaliações Restantes
+                        </div>
+                    </div>
+               <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-danger back-widget-set text-center">
+                            <i class="fas fa-plus fa-5x"></i>
+                            <h3>20</h3>
+                           Novos JP´s
+                        </div>
+                    </div>
 
-</head>
-<body>
-	<h1>Home</h1>
-	<div class="menu-content">
-		<div id="img_gestor">
-			<a href="index"> <img src="assests\gestores.png">
-			</a>
-		</div>
-		<div id="img_administrador">
-			<a href="index"> <img src="assests\administradores.png">
-			</a>
-		</div>
-		<div id="img_jp">
-			<a href="index"> <img src="assests\jp.png">
-			</a>
-		</div>
-		<div id="img_avaliacao">
-			<a href="index"> <img src="assests\avaliacao.png">
-			</a>
-		</div>
-	</div>
+        </div>              
+ 
+            </div>
 
-</body>
-</html>
+    </div>
+       <jsp:include page="Footer.jsp"></jsp:include>

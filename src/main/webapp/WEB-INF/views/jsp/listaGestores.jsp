@@ -42,7 +42,7 @@
 </head>
 <body>
 
-	<jsp:useBean id="dao" class="com.indra.projectrh.dao.ManagerDAO" />
+	<jsp:useBean id="dao" class="br.com.indra.projectrh.dao.ManagerDAO" />
 
 	<div id="content" align="center">
 		<h1>Sistema de Gestão de Jovens Profissionais</h1>
