@@ -69,7 +69,7 @@ text-align: center;
 			<div id='campoSenha'><input type="password" placeholder="password"/></div>
 <br>
 		<div id='botao'>
-		  <a href="Menu"> <!-- Arrumar o caminho do link que ele vai ir apÃ³s logar -->
+		  <a href="home"> <!-- Arrumar o caminho do link que ele vai ir apÃ³s logar -->
 			<button type="button" class="btn btn-primary">Logar</button>
 			
 		</a>	
