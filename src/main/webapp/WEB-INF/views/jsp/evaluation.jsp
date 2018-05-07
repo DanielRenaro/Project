@@ -1,43 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:composite="http://java.sun.com/jsf/composite"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui">
-	
-<h:head>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+
+<!-- BOOTSTRAP CORE STYLE  -->
+<link href="css/strap.css" rel="stylesheet" />
+<!-- FONT AWESOME STYLE  -->
+<link href="css/font.css" rel="stylesheet" />
+<!-- CUSTOM STYLE  -->
+<link href="css/home.css" rel="stylesheet" />
+<!-- GOOGLE FONT -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans'
+	rel='stylesheet' type='text/css' />
 <link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+	href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+	integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+	crossorigin="anonymous">
+	<!-- Formulario  -->
+<link href="css/form.css" rel="stylesheet" />
 
-<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js">
-	</script>
-	
-<title>Esqueci a senha</title>
-<style>
-h1 {
-	text-align: center;
-	margin-top: 50px;
-}
-
-a {
-	
-}
-
-#meio {
-	text-align: center;
-	margin-top: 30px;
-}
-</style>
-
-</h:head>
-<h:body>
+</head>
+<body>
 
   <div style="height:504px; margin-left:50px;">
     <!-- Titulo -->
-    <h1 align="center">Controle de Avaliação</h1>
+    <h1 align="center">Controle de Avalia��o</h1>
     <br/>
     
     <br/>
@@ -46,7 +36,7 @@ a {
       <span class="input-group-addon">
         <i class="glyphicon glyphicon-search"></i>
       </span>
-      <p:inputText name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control" ></p:inputText>
+      <input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control" >
     </div>
     <!-- grid -->
     <br/>
@@ -56,24 +46,31 @@ a {
       <div class="table-responsive col-md-8">
       
       <!-- Inicio da Alteração "Benildo" -->
-      <p:dataTable var="tab" value="">
-    <p:column headerText="Matricula">
-        <h:outputText value="" />
-        
-    </p:column>
- 
-    <p:column headerText="Nome">
-        <h:outputText value="" />
-    </p:column>
- 
-    <p:column headerText="Localidade">
-        <h:outputText value="" />
-    </p:column>
- 
-    <p:column headerText="Avaliação">
-        <h:outputText value="" />
-    </p:column>
-</p:dataTable> 
+     <table class="table table-striped" cellspacing="0" cellpadding="0">
+					<thead>
+					<tr>
+							<th>Matricula</th>
+							<th>Nome</th>
+							<th>Localidade</th>
+							<th>Avaliacao</th>
+					</tr>
+					</thead>
+					<tbody>
+
+						<tr>
+							<td>2002</td>
+							<td>Leonardo da Vinci</td>
+							<td>Campinas</td>
+						
+							<td>Competencias</td>
+							<td><span class="border border-dark bg-success">A</span> <span
+								class="border border-dark bg-success">A</span> <span
+								class="border border-dark bg-danger"> C</span> <span
+								class="border border-dark bg-warning">B</span></td>
+						</tr>
+
+					</tbody>
+				</table>
 <!-- Fim da Alteração "Benildo" -->
 
       </div>
@@ -89,23 +86,23 @@ a {
         <div>
             <!--Campo Nome -->
             <div class="form-group col-md-11  text-right ">
-                <h:outputLabel for="colFormLabelSm" class="col-sm-2 control-label">Nome:</h:outputLabel>
-                <p:inputText type="text" class="form-control form-control-sm col-sm-10" id="name" ></p:inputText>
+                <label class="col-sm-2 control-label">Nome:</label>
+                <input type="text" class="form-control form-control-sm col-sm-10" id="name" ></input>
               </div>
               <p></p>
               <div class="form-group col-md-11  text-right ">
-                  <h:outputLabel for="colFormLabelSm" class="col-sm-8 control-label">Competência (20%):</h:outputLabel>
-                  <p:inputMask mask="99"  class="form-control form-control-sm col-sm-2" id="competencia"  min="0" max="10"></p:inputMask>
+                  <label class="col-sm-8 control-label">Compet�nncia (20%):</label>
+                  <input type="text"  class="form-control form-control-sm col-sm-2" id="competencia"  min="0" max="10"></input>
                 </div>
             <p></p>
             <div class="form-group col-md-11  text-right ">
-                <h:outputLabel for="colFormLabelSm" class="col-xs-4 col-md-8">Conhecimento técnico (40%):</h:outputLabel>
-                <p:inputMask mask="99"  class="form-control form-control-sm col-sm-2" id="tecnico"  min="0" max="10"></p:inputMask>
+    <label class="col-xs-4 col-md-8">Conhecimento t�cnico (40%):</label>
+               <input type="text"  class="form-control form-control-sm col-sm-2" id="tecnico"  min="0" max="10">
               </div>
             <p></p>
             <div class="form-group col-md-11  text-right ">
-                <h:outputLabel for="colFormLabelSm" class="col-sm-8 control-label">Desempenho em projeto (40%):</h:outputLabel>
-                <p:inputMask mask="99"  class="form-control form-control-sm col-sm-2" id="desempenho"  min="0" max="10"></p:inputMask>
+               <label class="col-sm-8 control-label">Desempenho em projeto (40%):</label>
+                <input type="text" class="form-control form-control-sm col-sm-2" id="desempenho"  min="0" max="10"></input>
               </div>
 
             <p></p>
@@ -123,5 +120,5 @@ a {
        </div>
    </div>
 
-</h:body> 
+</body> 
 </html>

@@ -18,11 +18,8 @@ import com.indra.projectrh.model.User;
  */
 public class SimulaBanco {
 
-	private ArrayList<User> users ;
-	private ArrayList<Manager> managers;
-	private ArrayList<People> peoples;
-	private ArrayList<JP> jps;
-	
-	
+	public static ArrayList<User> users;
+	public static ArrayList<JP> jps;
+
 	
 }

@@ -15,6 +15,14 @@ public class User extends People {
 	@Enumerated(EnumType.STRING)
 	private UserTypes enumUserTypes;
 
+	
+	// construtor para testar a classe de array
+	public User(String login, String password, UserTypes enumUserTypes) {
+		this.login = login;
+		this.password = password;
+		this.enumUserTypes = enumUserTypes;
+	}
+	
 	public String getLogin() {
 		return login;
 	}

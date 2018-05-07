@@ -76,9 +76,9 @@ public class HomeController {
 		return "ForgotPass";
 	}
 
-	@RequestMapping("evaluationJP")
+	@RequestMapping("evaluation")
 	public String evaluationJP() {
-		return "evaluationJP";
+		return "evaluation";
 	}
 
 	@RequestMapping("editionJP")

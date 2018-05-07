@@ -1,94 +1,64 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
-<h:head>
-	<link rel="stylesheet"
-		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-	<style type="text/css">
-h3 {
-	margin-top: 5%;
-	margin-left: 40%;
-}
 
-#page {
-	margin-top: 5%;
-	margin-left: 20%;
-}
-</style>
-</h:head>
-<h:body>
-<p:growl autoUpdate="true" id="msg" showDetail="true"/>
-	<h:form id="form">
-		<div class="form-horizontal">
-		
-			<h3>Cadastro de usuÃ¡rios</h3>
-			<div id="page">
-				<!--Campo MatrÃ­cula-->
-				<div class="form-group row">
-					<label for="colFormLabelSm" class="col-sm-1 col-form-label">MatrÃ­cula:</label>
-					<div class="col-sm-4">
-	<!-- Erro aqui	  --><p:inputText value=""  id="matricula" class="form-control form-control-sm" />
-					</div>
-				</div>
-				<!--Campo Nome -->
-				<div class="form-group row">
-					<label for="colFormLabelSm" class="col-sm-1 col-form-label">Nome:</label>
-					<div class="col-sm-6">
-						<p:inputText  value="" id="nome" class="form-control form-control-sm" />
-					</div>
-				</div>
-				<!--Campo Email -->
-				<div class="form-group row">
-					<label for="colFormLabelSm" class="col-sm-1 col-form-label ">E-mail:</label>
-					<div class="col-sm-6">
-						<p:inputText type="text" value="" class="form-control form-control-sm" />
-					</div>
-				</div>
-				<!--Campo Senha -->
-				<div class="form-group row">
-					<label for="colFormLabelSm" class="col-sm-1 col-form-label ">Senha:</label>
-					<div class="col-sm-4">
-						<p:password type="password" value="" class="form-control form-control-sm" />
-					</div>
-				</div>
-				<!--Campo Localidade -->
-				<div class="form-group row">
-					<label for="colFormLabelSm" class="col-sm-1 col-form-label ">Localidade:</label>
-					<div class="col-sm-6">
-						
-						<p:inputText type="text" value="" class="form-control form-control-sm" />
-						
-					</div>
-					
-				</div>
-				<!--Campo Tipo 
-				<div class="form-group row">
-					<label for="colFormLabelSm" class="col-sm-1 col-form-label ">Tipo:</label>
-					<div class="col-sm-4">
-					<p:selectOneMenu  >		  		
-							<p:selectItem noSelectionOption="true" itemLabel="Escolha o tipo"/>
-							<p:selectItem itemLabel="Gestor"/>
-							<p:selectItem itemLabel="Recursos Humanos"/>
-					</p:selectOneMenu>
-					
-					</div>
-				</div>-->
-			</div>
-			<div class="col-md-12 text-center">
+<!-- BOOTSTRAP CORE STYLE  -->
+<link href="css/strap.css" rel="stylesheet" />
+<!-- FONT AWESOME STYLE  -->
+<link href="css/font.css" rel="stylesheet" />
+<!-- CUSTOM STYLE  -->
+<link href="css/home.css" rel="stylesheet" />
+<!-- GOOGLE FONT -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans'
+	rel='stylesheet' type='text/css' />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+	integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+	crossorigin="anonymous">
+	<!-- Formulario  -->
+<link href="css/form.css" rel="stylesheet" />
 
-			
-				<button onclick="clear()" class="btn btn-primary">Limpar</button>
-				<button type="button" class="btn btn-primary">Voltar</button>
-			</div>
-		</div>
-	</h:form>
-
-</h:body>
-
-</html>
+</head>
+<body>
+      <div class="container" id="advanced-search-form">
+        <h2>Cadastro de usuário</h2>
+        <form>
+            <div class="form-group">
+                <label for="first-name">Matrícula</label>
+                <input type="number" class="form-control" placeholder="Digite a matrícula">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Nome</label>
+                <input type="text" class="form-control" placeholder="Digite o nome">
+            </div>
+            <div class="form-group">
+                <label for="country">Localidade</label>
+                <input type="text" class="form-control" placeholder="Digite a localidade">
+            </div>
+            <div class="form-group">
+                <label for="number">Email</label>
+                <input type="text" class="form-control" placeholder="exemplo@indracompany.com">
+            </div>
+            <div class="form-group">
+                <label for="age">Senha</label>
+                <input type="password" class="form-control" placeholder="Digite a senha">
+            </div>
+            <div class="form-group">
+                <label>Tipo</label>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio">RH</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio">Gestor</label>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <button type="submit" class="btn btn-primary">Confirmar</button>
+            <button type="reset" class="btn btn-primary">Cancelar</button>
+        </form>
+    </div>
+</body>
