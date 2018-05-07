@@ -5,80 +5,61 @@
 <head>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
 
-<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js">
-</script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
-
-<style>
-#titulo{
-text-align: center;
-margin: 70px 350px;
-}
-#campoEmail{
-text-align: center;
-margin: -10px 350px;
-}
-#txtcampoEmail{
-text-align: center;
-margin:10px 350px;
-
-}
-#campoSenha{
-text-align: center;
-margin: -10px 350px;
-}
-#txtcampoSenha{
-text-align: center;
-margin:10px 350px;
-
-}
-#botao{
-text-align: center;
-
-}
-
-#content{
-	margin: 10px 50px;
-	width: 100px !important;
-	height: 25px !important;
-	border-radius: 5px !important;
-	display: block;
-	text-align: center;
-}
-
-</style><title>Projeto JP</title>
+<title>Login</title>
 </head>
 <body> 
 
- <div id="titulo">
-		<h1>Sistema de Gestão 
-		         de 
-		Jovens Profissionais</h1>
-</div>
-	<div>
-		<div class="formulario-login">
-<div id='txtcampoEmail'>
-		<label id="email">Email</label>
-</div>
-<div id='campoEmail'>
-        <input type="text" placeholder="email"/>
-</div>
-			<div id='txtcampoSenha'><label id="senha">Senha</label></div>
-			<div id='campoSenha'><input type="password" placeholder="password"/></div>
-<br>
-		<div id='botao'>
-		  <a href="home"> <!-- Arrumar o caminho do link que ele vai ir apÃ³s logar -->
-			<button type="button" class="btn btn-primary">Logar</button>
-			
-		</a>	
-		<a href="ForgotPass"> 
-		
-				<button type="button" class="btn btn-primary">Esqueci a senha</button>
-			</a>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="assests/img.png" alt="IMG">
+				</div>
+
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						Sistema de Gestão de Jovens Profissionais
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Senha">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+					
+					<a class="login100-form-btn" href="home" role="button">Entrar</a>
+					</div>
+
+					<div class="text-center p-t-12">
+						
+						<a class="txt2" href="ForgotPass">
+							Esqueceu a senha?
+						</a>
+					</div>
+
+					
+				</form>
+			</div>
 		</div>
 	</div>
-	</div>	
+	
+	
 	</body>
 </html>
